@@ -214,3 +214,85 @@ nav ul li a:hover {
   line-height: 1.8;
   color: #4b5563;
 }
+
+/* Contact Us */
+
+#contact,
+.contact-main {
+  flex: 1 0 auto;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  padding: 2rem 1rem;
+}
+#contact form,
+.contact-main form {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 3rem 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#contact label,
+.contact-main label {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+#contact input,
+#contact textarea,
+.contact-main input,
+.contact-main textarea {
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  background: rgba(249, 250, 251, 0.8);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+#contact input:focus,
+#contact textarea:focus,
+.contact-main input:focus,
+.contact-main textarea:focus {
+  border: 2px solid #fbbf24;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+  transform: translateY(-1px);
+}
+#contact textarea,
+.contact-main textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+#contact button[type="submit"],
+.contact-main button[type="submit"] {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #1f2937;
+  border: none;
+  padding: 1.1rem;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+#contact button[type="submit"]:hover,
+.contact-main button[type="submit"]:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+}
